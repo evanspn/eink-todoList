@@ -33,6 +33,7 @@ filename = "log.csv"  # log file to check previous data
 f = open(filename, 'r')
 csv_f = csv.reader(f)
 
+# The Amount of rows depends on the size of the eink display and if the display has other information on the screen
 for row in csv_f:
     A1old = row[0]
     A2old = row[1]
